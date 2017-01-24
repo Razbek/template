@@ -1,0 +1,9 @@
+.m-btn{
+    width: 250px;
+    @extend .button;
+    &--ghost{
+        @extend .hollow, .button;
+        border:1px solid white;
+        color:white;
+    }
+}

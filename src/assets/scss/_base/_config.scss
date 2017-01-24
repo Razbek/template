@@ -1,0 +1,44 @@
+body{
+    margin: auto;
+    overflow-x: hidden;
+}
+*{box-sizing: border-box;}
+//prevent menu from displaying until js loaded 
+.no-js {
+    @include breakpoint(small only) {
+        .top-bar {
+            display: none;
+        }
+    }
+
+    @include breakpoint(medium) {
+        .title-bar {
+            display: none;
+        }
+    }
+}
+main{
+    text-align: center;
+}
+section,footer{
+    padding: 20px 10px;
+}
+
+footer{
+    background:black;
+}
+.fb-color{
+    color: $fb-color;
+}
+.primary-color{
+    color: $primary-color;
+}
+.border-left{
+    @include breakpoint(medium){
+        border-left: 2px solid white;
+    }
+}
+//For extend purpose
+.auto{
+    margin: 0 auto;
+}

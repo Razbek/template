@@ -1,0 +1,16 @@
+.l-768{
+    text-align: center;
+    width: 768px;
+    margin: auto;
+    @extend .row; 
+    &__column{
+        @extend .small-12, .medium-4;  
+    }
+    &__header{
+        font-size: 1.3em;
+    }
+    &__icon{
+        font-size: 3rem!important;
+        color: $mat-green-lighter;
+    }
+}

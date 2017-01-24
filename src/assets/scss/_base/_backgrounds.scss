@@ -1,0 +1,40 @@
+//image bg´s
+.bg-full{
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bg-main{
+    background-image: url('../img/bg-main.png')
+}
+.bg-wireframe{
+    background-image: url('../img/bg-wireframe.png')
+}
+.bg-ppc{
+    background-image: url('../img/bg-ppc.png')
+}
+.bg-mailing{
+    background-image: url('../img/bg-mailing.png')
+}
+.bg-sprava{
+    background-image: url('../img/bg-sprava.png')
+}
+.bg-spoluprace{
+    background-image: url('../img/bg-spoluprace.png')
+}
+//Reference bg´s
+.bg-sedek{
+    background-image: url('../img/bg-sedek.png')
+}
+.bg-kuta{
+    background-image: url('../img/bg-kuta.png')
+}
+.bg-nexar{
+    background-image: url('../img/bg-nexar.png')
+}
+.bg-apartmany{
+    background-image: url('../img/bg-apartmany.png')
+}
+//color bg´s
+.bg-darkblue{
+    background: $dark-blue;
+}

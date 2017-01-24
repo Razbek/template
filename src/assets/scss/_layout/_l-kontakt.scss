@@ -1,0 +1,7 @@
+.l-kontakt{
+    max-width: 1000px;
+    @extend .auto;
+    &__column{
+        @extend .small-12, .medium-6; 
+    }
+}

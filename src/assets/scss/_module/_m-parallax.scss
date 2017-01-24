@@ -1,0 +1,12 @@
+.m-parallax{
+    min-height: 200px;
+    @extend .l-flex-xy, .bg-full;
+    @include breakpoint(medium){
+        min-height: 80vh;  
+    }
+    &__header{
+        padding: 0 20px;
+        color: $secondary-color;
+        @extend .auto;
+    }
+}

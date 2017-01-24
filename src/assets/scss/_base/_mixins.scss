@@ -1,0 +1,5 @@
+@mixin flex-container($x,$y,$direction){
+    @include flex;
+    @include flex-align($x, $y);
+    @include flex-direction($direction);
+}

@@ -1,0 +1,9 @@
+.m-top-nav--fixed{
+        width: 100vw;
+        top: 0;
+        position:fixed;
+        a{
+            color: $white;
+            &:hover{color: $primary-color;}
+        }
+    }

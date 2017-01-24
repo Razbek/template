@@ -1,19 +1,55 @@
-{{!-- This is the base layout for your project, and will be used on every page. --}}
-
 <!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
-  </head>
-  <body>
+<html class="no-js" lang="cs">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="author" content="Patrik Čada - PC-webdesign.cz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{title}}</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{root}}assets/css/app.css">
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
-
-    <script src="{{root}}assets/js/app.js"></script>
-  </body>
+    </head>
+    <body>
+        <nav class="m-top-nav--fixed">
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                <div class="title-bar-title">Menu</div>
+            </div>
+            <div class="top-bar fast" id="example-menu" data-animate="slide-in-left slide-out-left fast">
+                <div class="top-bar-left">
+                    <img class="m-logo" src="{{root}}/assets/img/logo.png" alt="PC-Webdesign" />
+                </div>
+                <div class="top-bar-right">
+                    <ul class="dropdown menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+                        <li><a href="index.html"><i class="fa fa-home fa-2x"></i></a></li>
+                        <li>
+                            <a href="#">Služby</a>
+                            <ul class="menu vertical">
+                                <li><a href="tvorba-www-stranek.html">Tvorba webových stránek</a></li>
+                                <li><a href="ppc-reklamy.html">PPC reklamy</a></li>
+                                <li><a href="email-marketing.html">E-mail marketig</a></li>
+                                <li><a href="technicka-podpora.html">Technická podpora</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Reference</a></li>
+                        <li><a href="#">Ceník</a></li>
+                        <li><a href="#">O mně</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="#"><i class="fa fa-phone"> 774 996 903</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+        {{> body}}
+        <footer>
+            <div class="auto text-center">
+                <a title="Facebook" href="https://www.facebook.com/pcwebdesign"><i class="fa fa-facebook-square fa-2x fb-color"></i></a> 
+                <br /><br />
+                <p>© 2016 PC-webdesign.cz. Všechna práva vyhrazena</p>
+            </div>
+        </footer>
+        <script src="{{root}}assets/js/app.js"></script>
+    </body>
 </html>

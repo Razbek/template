@@ -1,151 +1,127 @@
-<div class="row">
-  <div class="large-12 columns">
-    <h1>Welcome to Foundation for Sites</h1>
-  </div>
-</div> 
-
-<div class="row">
-  <div class="large-12 columns">
-    <div class="callout">
-      <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-      <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-      <p>Once you've exhausted the fun in this document, you should check out:</p>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowledge.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 medium-4 medium-push-2 columns">
-          <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-        </div>
-        <div class="large-4 medium-4 medium-pull-2 columns">
-          <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-        </div>        
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="large-8 medium-8 columns">
-    <h5>Here&rsquo;s your basic grid:</h5>
-    <!-- Grid Example -->
-
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="primary callout">
-          <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-6 medium-6 columns">
-        <div class="primary callout">
-          <p>Six columns</p>
-        </div>
-      </div>
-      <div class="large-6 medium-6 columns">
-        <div class="primary callout">
-          <p>Six columns</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="primary callout">
-          <p>Four columns</p>
-        </div>
-      </div>
-    </div>
-    
-    <hr />
-            
-    <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-    <form>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-12.columns" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
-        </div>
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
-        </div>
-        <div class="large-4 medium-4 columns">
-          <div class="row collapse">
-            <label>Input Label</label>
-            <div class="input-group">
-              <input class="input-group-field" type="text" placeholder="input-group" />
-              <span class="input-group-label">.com</span>
+---
+title: Tvorba webových stránek České Budějovice | PC-webdesign
+header: Patrik Čada<br /><span class="primary-color">Webdesign</span>
+sub-header: Přivádím webové stránky k životu
+title-color: white
+hero-img: bg-main
+---
+<header>
+    {{> l-hero}}
+</header>
+<main>
+    <section>
+        <h2>Proč webovky odemně?</h2>
+        <div class="l-768">
+            <div class="l-768__column">
+                <h3 class="l-768__header">Mám rád to co dělám</h3>
+                <i class="fa fa-heart-o l-768__icon"></i>
+                <p>Má práce mě velmi baví, a proto ke každé zakázce přistupuji s velkým nadšením.</p>
             </div>
-          </div>
+            <div class="l-768__column">
+                <h3 class="l-768__header">Nebojím se výzev</h3>
+                <i class="fa fa-rocket l-768__icon"></i>
+                <p>Neustále se učit nové věci je součást moji práce, a proto je každá výzva pro mě neocenitelná zkušenost.</p>
+            </div>
+            <div class="l-768__column">
+                <h3 class="l-768__header">Za svou práci ručím</h3>
+                <i class="fa fa-handshake-o l-768__icon"></i>
+                <p>Spokojený zákazník je pro mě hlavní priorita. Každou zakázku se snažim zhotovit ke 100% spokojenosti.
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Select Box</label>
-          <select>
-            <option value="husker">Husker</option>
-            <option value="starbuck">Starbuck</option>
-            <option value="hotdog">Hot Dog</option>
-            <option value="apollo">Apollo</option>
-          </select>
+    </section>
+    <!--Webové stránky-->
+    <section> 
+        <!--Parallax bg with header-->
+        {{> parallax-div 
+            bg="bg-wireframe" 
+            title="Vytvářím webové stránky"
+        }}
+        <!--info undert parallax-->
+        {{> l-1000-div 
+            title="Moderně, responzivně, za přijatelnou cenu"
+            text="<p>Zabývám se kompletní tvorbou webových stránek, od návrhu až po dokončení.</p>
+                <p>Zaměřuji se na menší firmy a živnostníky.</p>
+                <p>Nabízím <strong>webové stránky na míru</strong> , stránky s redakčním systémem <strong>Wordpress</strong>, a <strong>jednoduché webové prezentace</strong>.</p>"
+                svg="webSVG"
+                link="tvorba-www-stranek.html"
+                about="Webových stránkách"
+        }}
+    </section>
+    <!--PPC reklamy-->
+    <section>
+        {{> parallax-div 
+            bg="bg-ppc" 
+            title="K webovkám přidám PPC reklamu"
+        }}
+        {{> l-1000-div 
+            title="Zaměřte svou reklamu pouze na ty správné zákazníky"
+            text="<p>Reklamní kampaně ve vyhledávačích a na socialních sítích jsou důležitou součástí každého podnikání.</p>
+                  <p>Nabízim Vám vytvoření a správu <strong>PPC reklam</strong>.</p>
+                  <p>Zabývám se reklamními systémy <strong>Adwords</strong> (Google), <strong>Sklik</strong> (Seznam)</p>"
+                svg="ppcSVG"
+                link="ppc-reklamy.html"
+                about="PPC reklamách"
+                reverse=true
+        }}
+    </section>
+    <!--E-mail marketing-->
+    <section>
+        {{> parallax-div 
+            bg="bg-mailing" 
+            title="Poradím Vám s e-mail marketingem"
+        }}
+        {{> l-1000-div 
+            title="Oslovujte své zákazníky moderním způsobem"
+            text="<p> Rozesílejte své e-maily efektivně a chytře, tak abyste oslovili zákazníky co Vás již znají.</p>
+                  <p>Získejte možnost mít veškeré rozesílky plně automatizované.</p>
+                  <p> Vytvořím Vám kampaně pro stávající i budoucí zákazníky a plně zautomatizuji Váš proces rozesílání.</p>"
+                svg="mailingSVG"
+                link="email-marketing.html"
+                about="E-mail marketingu"
+        }}
+    </section>
+    <!--Technická podpora-->
+    <section>
+        {{> parallax-div 
+            bg="bg-sprava" 
+            title="Postarám se o Vaše stránky"
+        }}
+        {{> l-1000-div 
+            title="Webové stránky bez starostí a s technickou podporou"
+            text="<p>Nabízím kompletní správu a technickou podporu webových stránek.</p>
+                  <p>O webové stránky je potřeba se starat a aktualizovat je, proto svým klientům nabízím technickou podporu vč. úprav a aktualizací.</p>
+                  <p>Zabývám se úpravami kódu, jak šablon ve <strong>Wordpressu</strong>, tak i normálních <strong>HTML</strong> stránek vč. <strong>javascriptu</strong>.</p>"
+                svg="spravaSVG"
+                link="technicka-podpora.html"
+                about="technické podpoře"
+                reverse=true
+        }}
+    </section>
+    <section>
+        {{> parallax-div 
+            bg="bg-spoluprace" 
+            title="Jak probíhá spolupráce?"
+        }}
+        {{> procesSVG}}
+    </section>
+    <section>
+        <div class="row">
+            {{> reference
+            bg="bg-sedek"
+            }}
+            {{> reference
+            bg="bg-kuta"
+            }}
+            {{> reference
+            bg="bg-nexar"
+            }}
+            {{> reference
+            bg="bg-apartmany"
+            }}
         </div>
-      </div>
-      <div class="row">
-        <div class="large-6 medium-6 columns">
-          <label>Choose Your Favorite</label>
-          <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-        </div>
-        <div class="large-6 medium-6 columns">
-          <label>Check these out</label>
-          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-          <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Textarea Label</label>
-          <textarea placeholder="small-12.columns"></textarea>
-        </div>
-      </div>
-    </form>
-  </div>     
-
-  <div class="large-4 medium-4 columns">
-    <h5>Try one of these buttons:</h5>
-    <p><a href="#" class="small button">Simple Button</a><br/>          
-    <a href="#" class="medium success button">Success Btn</a><br/>
-    <a href="#" class="medium alert button">Alert Btn</a><br/>
-    <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-    <div class="callout">
-      <h5>So many components, girl!</h5>
-      <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-      <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-    </div>
-  </div>
-</div>
+    </section>
+    <section>
+        {{> kontakt}}
+    </section>
+</main>

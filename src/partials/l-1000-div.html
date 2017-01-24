@@ -1,0 +1,10 @@
+<div class="l-1000">
+    <div class="l-1000__column">
+        <h3>{{title}}</h3>
+        {{{text}}}
+    </div>
+    <div class="l-1000__column{{#if reverse}} l-1000__column--first{{/if}}">
+        {{> (lookup . "svg") }}
+        <a href="{{link}}" class="m-btn">Více o {{about}} <i class="fa fa-arrow-right"></i></a>
+    </div>
+</div>

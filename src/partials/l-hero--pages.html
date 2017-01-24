@@ -1,0 +1,28 @@
+<div class="l-hero--pages {{bg}}">
+    <div class="l-hero__75">
+        <div class="l-hero__600">
+            <i class="l-hero--pages__icon fa {{icon}}"></i>
+            <h1 class="l-hero--pages__h1">{{title}}</h1>
+            {{{text}}}
+            <a href="
+               {{#if about}}
+               {{link}}
+               {{else}}
+               kontakt.html
+               {{/if}}
+
+               " class="m-btn align-self-middle">
+                {{#if about}}
+                {{about}}
+                {{else}}
+                Kontaktujte mě
+                {{/if}}
+
+                <i class="fa fa-arrow-down"></i>
+            </a>
+        </div>
+    </div>
+    <div class="l-hero__25">
+        {{> (lookup . "svg") }}
+    </div>
+</div>

@@ -1,0 +1,71 @@
+.l-hero{
+    font-size: 150%;
+    padding: 20px;
+    width:100%;
+    min-height: 100vh;
+    @include flex-container(center,middle,column);
+    @include breakpoint(medium){
+        padding-left: 80px;
+        &__btn{
+             @include flex-align-self(bottom);
+        }
+        &--left{
+            @include flex-container(center, top,column);
+        }
+    }
+    &__container{
+        @extend .l-hero--left;
+        max-width: 490px;
+        width: 100%;
+    }
+    &__header{
+        font-weight: bolder;
+    }
+    &__sub-header{
+        font-weight: bolder;
+    }
+    &--pages{
+        color: $black;
+        @extend .l-flex-xy;
+        @include breakpoint(medium){
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        &__h1{
+            color: $primary-color;
+        }
+        &__icon{
+            padding-top: 60px;
+            font-size: 5rem; 
+            @include breakpoint(medium){
+                display: none;
+            }
+        }
+    }
+    &__600{
+        padding: 10px;
+        max-width: 600px;
+        text-align: center;
+        @include flex-container(center,middle,column);
+        @include breakpoint(medium){
+            text-align: left;
+            align-items: flex-start;
+        }
+    }
+    &__75{
+        height: 100vh;
+        background: rgba($white, 0.75);
+        @extend .small-12, .medium-9, .l-flex-xy-column;
+    }
+    &__25{
+        display:none;
+        @extend .small-12, .medium-3; 
+        @include breakpoint(medium){
+            @include flex-container(center,middle,column);
+            height: 100vh;
+            background: rgba($dark-blue, 0.9);
+
+        }
+
+    }
+}

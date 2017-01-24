@@ -5,8 +5,8 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
+//@include foundation-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -45,7 +45,36 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+//custom css based on SMACSS and BEM
+//Base css
+@import "_base/_config.scss",
+        "_base/_backgrounds.scss",
+        "_base/_mixins.scss"
+        ; 
+
+//Layout css
+@import "_layout/_l-768.scss",
+        "_layout/_l-1000.scss",
+        "_layout/_l-hero.scss",
+        "_layout/_l-kontakt.scss",
+        "_layout/_l-flex.scss"
+        ;
+
+//Module css
+@import "_module/_m-top-nav.scss",
+        "_module/_m-parallax.scss",
+        "_module/_m-underline.scss",
+        "_module/_m-btn.scss",
+        "_module/_m-logo.scss",
+        "_module/_m-ref-img.scss",
+        "_module/_m-kontakt-form.scss",
+        "_module/_m-procesSVG.scss"
+        ;
+
+//State css
+@import "_state/s-menu.scss";

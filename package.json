@@ -35,10 +35,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-zurb-template.git"
+    "url": "https://github.com/Razbek/pc-webdesign"
   },
   "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
+    "url": "https://github.com/Razbek/pc-webdesign",
     "email": "foundation@zurb.com"
   },
   "babel": {

@@ -5,5 +5,9 @@
         @extend .hollow, .button;
         border:1px solid white;
         color:white;
+        &:hover{
+            background: $primary-color;
+            color: white;
+        }
     }
 }

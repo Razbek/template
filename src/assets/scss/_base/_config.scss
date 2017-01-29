@@ -21,11 +21,11 @@ main{
     text-align: center;
 }
 section,footer{
-    padding: 20px 10px;
-}
-
+    padding: 20px 0;
+}   
 footer{
     background:black;
+    padding: 20px 10px;
 }
 .fb-color{
     color: $fb-color;

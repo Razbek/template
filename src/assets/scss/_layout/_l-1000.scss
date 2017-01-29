@@ -3,10 +3,11 @@
     width: 100%;
     max-width: 1000px;
     margin: auto;
+    flex-wrap: wrap;
     @extend .l-flex-xy;
     &__column{
         order: 1;
-        @extend .column, .small-12, .medium-6;
+        @extend .small-12, .medium-6;
         @include breakpoint(medium){
             &--first{
                 order: 0;

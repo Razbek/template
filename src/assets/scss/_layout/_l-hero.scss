@@ -1,15 +1,16 @@
 .l-hero{
-    font-size: 150%;
     padding: 20px;
     width:100%;
     min-height: 100vh;
+    text-align: center;
     @include flex-container(center,middle,column);
     @include breakpoint(medium){
         padding-left: 80px;
         &__btn{
-             @include flex-align-self(bottom);
+            @include flex-align-self(bottom);
         }
         &--left{
+            text-align: left;
             @include flex-container(center, top,column);
         }
     }
@@ -64,7 +65,6 @@
             @include flex-container(center,middle,column);
             height: 100vh;
             background: rgba($dark-blue, 0.9);
-
         }
 
     }
